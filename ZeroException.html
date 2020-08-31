@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript">
+ function divide()
+ {
+ var n=Number(prompt("Please enter numerator"));
+ var d=Number(prompt("Please enter denominator"));
+
+ try{
+ 
+if(d==0){
+
+	throw(
+	{
+	error:"Divide by zero error",
+	message:"Denominator cannot"
+	})
+}
+else
+{
+    document.write("Result="+(n/d));
+	
+}
+ }
+ catch(e){
+    document.write("Error="+e.error + "<br/>");
+	document.write("Message="+e.message+"<br/>");
+ }
+
+ }
+ divide();
+ </script>
+</head>
+<body>
+</body>
+</html>
+
+
+ 
+ 
+ 
+ 

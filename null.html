@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+ function nullexception()
+ {
+  var string = null;
+
+ try{
+ 
+ if (string.equals("Spektra")){
+
+	throw(
+	{
+	error:"Null pointer exception",
+	message:"Null exception"
+	})
+}
+else
+{
+    document.write("Result="+string);
+	
+}
+ }
+ catch(e){
+    document.write("Error="+e.error + "<br/>");
+	document.write("Message="+e.message+"<br/>");
+ }
+
+ }
+ nullexception();
+ </script>
+</head>
+<body>
+</body>
+</html>
+
+
+ 
+ 
+ 
+ 
